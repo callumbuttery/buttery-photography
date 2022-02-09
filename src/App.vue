@@ -24,8 +24,10 @@
       <v-spacer></v-spacer>
 
       <v-btn large color="white"><router-link to="/" class="navButtons">Home</router-link></v-btn>
-      <v-btn large color="white"><router-link to="/about" class="navButtons">About</router-link></v-btn
-      >
+      <v-btn large color="white"><router-link to="/about" class="navButtons">About</router-link></v-btn>
+      <v-btn large color="white"><router-link to="/" class="navButtons">Portfolio</router-link></v-btn>
+      <v-btn large color="white"><router-link to="/" class="navButtons">Pricing</router-link></v-btn>
+      <v-btn large color="white"><router-link to="/" class="navButtons">Contact</router-link></v-btn>
     </v-app-bar>
 
     <v-main>
