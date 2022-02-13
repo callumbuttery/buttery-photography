@@ -15,6 +15,7 @@
       <v-spacer></v-spacer>
 
       <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Home</router-link></v-tab>
+      <v-tab large color="white"><router-link to="/Reviews" class="navButtons white--text text-h6">Reviews</router-link></v-tab>
       <v-tab large color="white"><router-link to="/about" class="navButtons white--text text-h6">About</router-link></v-tab>
       <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Portfolio</router-link></v-tab>
       <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Pricing</router-link></v-tab>
