@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="#5c5c5c" elevation="10" height="125">
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="/assets/textwhite.png"
           transition="scale-transition"
           width="40"
         />
@@ -23,11 +23,11 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn large color="white"><router-link to="/" class="navButtons">Home</router-link></v-btn>
-      <v-btn large color="white"><router-link to="/about" class="navButtons">About</router-link></v-btn>
-      <v-btn large color="white"><router-link to="/" class="navButtons">Portfolio</router-link></v-btn>
-      <v-btn large color="white"><router-link to="/" class="navButtons">Pricing</router-link></v-btn>
-      <v-btn large color="white"><router-link to="/" class="navButtons">Contact</router-link></v-btn>
+      <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Home</router-link></v-tab>
+      <v-tab large color="white"><router-link to="/about" class="navButtons white--text text-h6">About</router-link></v-tab>
+      <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Portfolio</router-link></v-tab>
+      <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Pricing</router-link></v-tab>
+      <v-tab large color="white"><router-link to="/" class="navButtons white--text text-h6">Contact</router-link></v-tab>
     </v-app-bar>
 
     <v-main>
@@ -49,5 +49,6 @@ export default {
 <style>
 .navButtons {
   text-decoration: none;
+  color: "white";
 }
 </style>
