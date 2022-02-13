@@ -1,15 +1,23 @@
 <template>
-  <hello-world />
+  <v-container>
+    <TitleAndRating/>
+  </v-container>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import TitleAndRating from "../components/TitleAndRating";
 
-  export default {
-    name: 'Home',
+export default {
+  name: "Home",
 
-    components: {
-      HelloWorld,
-    },
-  }
+  components: {
+    TitleAndRating,
+  },
+};
 </script>
+
+<style>
+#fullContainer {
+  background-color: "grey",
+}
+</style>
