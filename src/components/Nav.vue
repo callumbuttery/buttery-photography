@@ -1,20 +1,21 @@
 <template>
-  <v-app-bar app color="white" dark>
+  <v-app-bar app height="100px" color="white" dark>
     <div class="d-flex align-center">
       <v-img
         alt="Vuetify Logo"
-        class="shrink mr-2"
+        class="shrink mr-2 logo"
         contain
         src="../assets/logo.png"
         transition="scale-transition"
-        width="180"
+        width="200"
       />
     </div>
-
     <v-spacer></v-spacer>
-    <div v-for="item in items">
-      <v-btn class="ma-1" elevation="2" plain raised color="black">{{ item.text }}</v-btn>
+    <div v-for="item in items" class="list">
+      <v-btn class="buttons" plain x-large color="black">{{ item.text }}</v-btn>
     </div>
+    <v-icon color="red darken-2">mdi-instagram </v-icon> // Todo: Add instagram
+    link
   </v-app-bar>
 </template>
 
@@ -26,28 +27,23 @@ export default {
       items: [
         {
           text: "Home",
-          icon: "mdi-home",
           href: "/",
         },
         {
           text: "About",
-          icon: "mdi-information",
           href: "/about",
         },
         {
           text: "Contact",
-          icon: "mdi-email",
           href: "/contact",
         },
         {
-          text: "Wildlife",
-          icon: "mdi-account",
-          href: "/login",
+          text: "Pricing",
+          href: "/pricing",
         },
         {
           text: "weddings",
-          icon: "mdi-account-plus",
-          href: "/register",
+          href: "/pricing",
         },
       ],
     };
@@ -56,7 +52,18 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+
 .list {
   display: inline-block;
+}
+
+.buttons {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+.logo {
+  margin-left: 360px;
 }
 </style>
