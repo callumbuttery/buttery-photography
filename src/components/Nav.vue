@@ -1,24 +1,15 @@
 <template>
   <v-app-bar app height="100px" color="black" dark>
-    <div class="d-flex align-center">
-      <v-img
-        alt="Vuetify Logo"
-        class="shrink mr-2 logo"
-        contain
-        src="../assets/logo.png"
-        transition="scale-transition"
-        width="150px"
-      />
-    </div>
-    <v-spacer></v-spacer>
-    <div class="listContainer">
-      <div v-for="item in items" class="list">
-        <v-btn class="buttons white--text" plain x-large color="black">{{
-          item.text
-        }}</v-btn>
-      </div>
-      <v-icon color="red darken-2">mdi-instagram </v-icon>
-    </div>
+    <v-container fill-height fluid>
+      <v-row align="center" justify="center">
+        <div v-for="item in items" class="list">
+          <v-btn class="buttons white--text" plain x-large color="black">{{
+            item.text
+          }}</v-btn>
+        </div>
+        <v-icon color="red darken-2">mdi-instagram </v-icon>
+      </v-row>
+    </v-container>
   </v-app-bar>
 </template>
 
