@@ -7,7 +7,7 @@
         contain
         src="../assets/logo.png"
         transition="scale-transition"
-        width="200"
+        width="150px"
       />
     </div>
     <v-spacer></v-spacer>
@@ -62,7 +62,7 @@ export default {
 }
 
 .buttons {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   color: white;
 }
 
