@@ -1,15 +1,20 @@
 <template>
-  <Welcome />
+  <div>
+    <Welcome />
+    <Intro />
+  </div>
 </template>
 
 <script>
-  import Welcome from '../components/Welcome'
+import Welcome from "../components/Welcome";
+import Intro from "../components/Intro";
 
-  export default {
-    name: 'Home',
+export default {
+  name: "Home",
 
-    components: {
-      Welcome,
-    },
-  }
+  components: {
+    Welcome,
+    Intro,
+  },
+};
 </script>
