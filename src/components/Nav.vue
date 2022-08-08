@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app height="100px" color="white" dark>
+  <v-app-bar app height="100px" color="black" dark>
     <div class="d-flex align-center">
       <v-img
         alt="Vuetify Logo"
@@ -11,11 +11,14 @@
       />
     </div>
     <v-spacer></v-spacer>
-    <div v-for="item in items" class="list">
-      <v-btn class="buttons" plain x-large color="black">{{ item.text }}</v-btn>
+    <div class="listContainer">
+      <div v-for="item in items" class="list">
+        <v-btn class="buttons white--text" plain x-large color="black">{{
+          item.text
+        }}</v-btn>
+      </div>
+      <v-icon color="red darken-2">mdi-instagram </v-icon>
     </div>
-    <v-icon color="red darken-2">mdi-instagram </v-icon> // Todo: Add instagram
-    link
   </v-app-bar>
 </template>
 
@@ -65,5 +68,9 @@ export default {
 
 .logo {
   margin-left: 360px;
+}
+
+.listContainer {
+  margin-right: 200px;
 }
 </style>
