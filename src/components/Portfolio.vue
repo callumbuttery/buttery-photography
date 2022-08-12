@@ -81,7 +81,6 @@ export default {
 <style>
 .portfolioPrimaryContainer {
     background-color: #fff;
-    padding-bottom: 150px;
     padding-top: 150px;
 }
 
@@ -90,7 +89,7 @@ export default {
     background: #fff;
     max-width: 1000px;
     margin: auto;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
 }
 
 .cardText {
