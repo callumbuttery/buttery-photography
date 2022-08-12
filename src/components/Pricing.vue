@@ -1,14 +1,16 @@
 <template>
     <div class="pricingPrimaryContainer">
         <v-container fill-height fluid class="pricingSecondaryContainer">
-            <h1 class="packagesTitle">Wedding Packages</h1>
+            <v-row align="center" justify="center">
+                <v-col align="center" justify="center" class="packagesTitle">WEDDING PACKAGES</v-col>
+            </v-row>
             <v-row>
                 <v-col v-for="(option, i) in packages" :key="n">
                     <v-card class="pa-2" outlined tile>
                         <v-card-title class="pricingTitle">{{ option.name }}</v-card-title>
                         <v-card-subtitle>{{ option.price }}</v-card-subtitle>
                         <v-card-text>{{ option.description }}</v-card-text>
-                        <v-card-text v-for="(detail, j) in option.details" :key="j">{{detail}}</v-card-text>
+                        <v-card-text v-for="(detail, j) in option.details" :key="j">{{ detail }}</v-card-text>
                     </v-card>
                 </v-col>
             </v-row>

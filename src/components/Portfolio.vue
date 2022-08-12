@@ -1,6 +1,8 @@
 <template>
     <div class="portfolioPrimaryContainer">
-        <h1 class="portfolioTitle">PORTFOLIO</h1>
+        <v-row align="center" justify="center">
+            <v-col align="center" justify="center" class="portfolioTitle">PORTFOLIO</v-col>
+        </v-row>
         <div class="portfolioSecondaryContainer" v-for="(wedding, i) in weddings" :key="i">
             <v-card-title class="cardText" color="#bcb8b1">{{ wedding.name }}</v-card-title>
             <v-card-subtitle class="text-center" color="#bcb8b1">{{ wedding.venue }}</v-card-subtitle>
