@@ -1,5 +1,6 @@
 <template>
     <div class="portfolioPrimaryContainer">
+        <h1 class="portfolioTitle">PORTFOLIO</h1>
         <div class="portfolioSecondaryContainer" v-for="(wedding, i) in weddings" :key="i">
             <v-card-title class="cardText" color="#bcb8b1">{{ wedding.name }}</v-card-title>
             <v-card-subtitle class="text-center" color="#bcb8b1">{{ wedding.venue }}</v-card-subtitle>
@@ -106,5 +107,14 @@ export default {
 
 .v-carousel__controls {
     background: none;
+}
+
+.portfolioTitle {
+    color: black;
+    margin: auto;
+    margin-bottom: 80px;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    max-width: 300px;
 }
 </style>

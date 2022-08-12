@@ -1,5 +1,6 @@
 <template>
   <v-container fluid wrap class="introContainer">
+    <h1 class="introTitle">ABOUT</h1>
     <v-col align="center" justify="center" class="topLine">───────────────</v-col>
     <v-row>
       <v-col align="center" justify="center" class="introMainHeader">Natural, documentary Wedding Photography</v-col>
@@ -36,7 +37,7 @@ export default {
   font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .bottomLine {
@@ -65,5 +66,16 @@ export default {
 
 .introContainer {
   background: #1D1C1A !important;
+}
+
+.introTitle {
+  color: White;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  max-width: 200px;
+  padding-top: 100px;
+
 }
 </style>
