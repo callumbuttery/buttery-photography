@@ -74,7 +74,7 @@ export default {
   margin-bottom: 50px;
   font-size: 50px;
   font-family: "Playfair Display", serif;
-  max-width: 200px;
+  max-width: 180px;
   padding-top: 100px;
 
 }
