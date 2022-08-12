@@ -36,14 +36,14 @@ export default {
   font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .bottomLine {
   font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 
 .introMainHeader {

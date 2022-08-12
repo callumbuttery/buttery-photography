@@ -1,0 +1,111 @@
+<template>
+    <div class="portfolioPrimaryContainer">
+        <div class="portfolioSecondaryContainer" v-for="(wedding, i) in weddings" :key="i">
+            <v-card-title class="cardText" color="#bcb8b1">{{ wedding.name }}</v-card-title>
+            <v-card-subtitle class="text-center" color="#bcb8b1">{{ wedding.venue }}</v-card-subtitle>
+            <v-carousel class="carousel">
+                <v-carousel-item v-for="(picture, j) in wedding.pictures" :key="j" :src="picture.src"
+                    reverse-transition="slide-x-transition" transition="slide-x-transition"></v-carousel-item>
+            </v-carousel>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "Portfolio",
+    data() {
+        return {
+            weddings: [
+                {
+                    name: "Mr & Mrs John",
+                    venue: "The Castle",
+                    pictures: [
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+                        },
+                    ],
+                },
+                {
+                    name: "Mr & Mrs bob",
+                    venue: "The House",
+                    pictures: [
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+                        },
+                    ],
+                },
+                {
+                    name: "Mr & Mrs Smith",
+                    venue: "The moon",
+                    pictures: [
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+                        },
+                        {
+                            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+                        },
+                    ],
+                },
+            ]
+        }
+    },
+}
+
+</script>
+
+<style>
+.portfolioPrimaryContainer {
+    background-color: #fff;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+
+.portfolioSecondaryContainer {
+    background: #fff;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.cardText {
+    max-width: 200px;
+    margin: auto;
+    color: Black;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+}
+
+.carousel {
+    border-radius: 25px;
+}
+
+.v-carousel__controls {
+    background: none;
+}
+</style>
