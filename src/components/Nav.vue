@@ -4,7 +4,7 @@
       <v-row align="center" justify="center">
         <div v-for="item in items" class="list">
           <v-btn class="buttons white--text" text x-large color="black">{{
-            item.text
+              item.text
           }}</v-btn>
         </div>
         <v-icon color="red darken-2">mdi-instagram </v-icon>
@@ -28,16 +28,16 @@ export default {
           href: "/about",
         },
         {
-          text: "Contact",
-          href: "/contact",
+          text: "Portfolio",
+          href: "/pricing",
         },
         {
           text: "Pricing",
           href: "/pricing",
         },
         {
-          text: "weddings",
-          href: "/pricing",
+          text: "Contact",
+          href: "/contact",
         },
       ],
     };
