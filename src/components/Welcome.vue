@@ -24,6 +24,6 @@ export default {
 .mainText {
   font-size: 50px;
   font-family: "Playfair Display", serif;
-  color: Black;
+  color: #1D1C1A;
 }
 </style>

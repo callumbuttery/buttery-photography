@@ -98,7 +98,7 @@ export default {
 .cardText {
     max-width: 200px;
     margin: auto;
-    color: Black;
+    color: #1D1C1A;
     font-family: "Playfair Display", serif;
     font-size: 22px;
 }
@@ -112,7 +112,7 @@ export default {
 }
 
 .portfolioTitle {
-    color: black;
+    color: #1D1C1A;
     margin: auto;
     margin-bottom: 80px;
     font-size: 50px;
