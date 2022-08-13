@@ -5,6 +5,11 @@
                 <v-col align="center" justify="center" class="contactTitle">CONTACT</v-col>
             </v-row>
             <v-col align="center" justify="center" class="contactLine">───────────────</v-col>
+            <v-card class="contactCard" elevation="5">
+                <v-row lign="center" justify="center"> 
+                    <v-card-title>Hello world</v-card-title>
+                </v-row>
+            </v-card>
         </v-container>
     </div>
 </template>
@@ -29,11 +34,17 @@ export default {
 .contactPrimaryContainer {
     background-color: #fff;
     padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .contactLine {
     font-size: 60px;
     font-family: "Playfair Display", serif;
     color: #1D1C1A;
+}
+
+.contactCard {
+    width: 700px;
+    margin: auto;
 }
 </style>
