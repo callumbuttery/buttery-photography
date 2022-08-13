@@ -3,6 +3,7 @@
         <v-row align="center" justify="center">
             <v-col align="center" justify="center" class="portfolioTitle">PORTFOLIO</v-col>
         </v-row>
+        <v-col align="center" justify="center" class="portfolioTopLine">───────────────</v-col>
         <div class="portfolioSecondaryContainer" v-for="(wedding, i) in weddings" :key="i">
             <v-card-title class="cardText" color="#bcb8b1">{{ wedding.name }}</v-card-title>
             <v-card-subtitle class="text-center" color="#bcb8b1">{{ wedding.venue }}</v-card-subtitle>
@@ -114,9 +115,15 @@ export default {
 .portfolioTitle {
     color: #1D1C1A;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     font-size: 50px;
     font-family: "Playfair Display", serif;
     max-width: 300px;
+}
+
+.portfolioTopLine {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  color: #1D1C1A;
 }
 </style>

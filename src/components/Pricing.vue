@@ -4,6 +4,7 @@
             <v-row align="center" justify="center">
                 <v-col align="center" justify="center" class="packagesTitle">WEDDING PACKAGES</v-col>
             </v-row>
+            <v-col align="center" justify="center" class="pricingTopLine">───────────────</v-col>
             <v-row>
                 <v-col v-for="(option, i) in packages" :key="n">
                     <v-card class="pa-2" outlined tile>
@@ -14,6 +15,7 @@
                     </v-card>
                 </v-col>
             </v-row>
+            <v-col align="center" justify="center" class="pricingBottomLine">───────────────</v-col>
         </v-container>
     </div>
 </template>
@@ -69,9 +71,22 @@ export default {
 .packagesTitle {
     color: white;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     font-size: 50px;
     font-family: "Playfair Display", serif;
 
+}
+
+.pricingTopLine {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  color: #f5cb5c;
+  margin-top: 50px;
+}
+.pricingBottomLine {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  color: #f5cb5c;
+  margin-bottom: 50px;
 }
 </style>
