@@ -7,7 +7,7 @@
             <v-col align="center" justify="center" class="pricingTopLine">───────────────</v-col>
             <v-row>
                 <v-col v-for="(option, i) in packages" :key="n">
-                    <v-card class="pa-2" outlined tile>
+                    <v-card class="pa-2 rounded-xl" outlined tile>
                         <v-card-title class="pricingTitle">{{ option.name }}</v-card-title>
                         <v-card-subtitle>{{ option.price }}</v-card-subtitle>
                         <v-card-text>{{ option.description }}</v-card-text>
@@ -89,4 +89,5 @@ export default {
   color: #f5cb5c;
   margin-bottom: 50px;
 }
+
 </style>
