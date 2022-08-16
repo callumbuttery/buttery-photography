@@ -1,7 +1,8 @@
 <template>
-  <v-app-bar app height="100px" color="#1D1C1A" dark>
+  <v-app-bar app height="130px" color="#1D1C1A" dark>
     <v-container fill-height fluid>
-      <v-row align="center" justify="center">
+      <v-row align="center" justify="center" class="navRow">
+        <v-img src="../assets/logo.png" height="70px" contain></v-img>
         <div v-for="item in items" class="list">
           <v-btn class="buttons white--text" text x-large color="#1D1C1A">{{
               item.text
