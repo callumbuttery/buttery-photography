@@ -11,7 +11,7 @@
                         about any queries you
                         have. We aim to get back to you within 48 hours</v-card-subtitle>
 
-                    <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-form ref="form" v-model="valid" lazy-validation width>
                         <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required>
                         </v-text-field>
 
@@ -23,7 +23,7 @@
                         <v-checkbox v-model="checkbox" :rules="[v => !!v || 'You must agree to continue!']"
                             label="Do you agree?" required></v-checkbox>
 
-                        <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
+                        <v-btn :disabled="!valid" color="success" class="ma-2" @click="validate">
                             submit
                         </v-btn>
                     </v-form>
