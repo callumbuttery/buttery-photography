@@ -71,7 +71,7 @@ export default {
 .packagesTitle {
     color: white;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: 50px;
     font-family: "Playfair Display", serif;
 
@@ -81,7 +81,7 @@ export default {
   font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .pricingBottomLine {
   font-size: 60px;

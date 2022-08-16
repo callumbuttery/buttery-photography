@@ -39,7 +39,7 @@ export default {
   font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .bottomLine {
@@ -73,7 +73,7 @@ export default {
 .introTitle {
   color: White;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 50px;
   font-family: "Playfair Display", serif;
   max-width: 180px;
