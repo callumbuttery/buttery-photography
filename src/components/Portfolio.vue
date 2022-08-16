@@ -93,7 +93,7 @@ export default {
     background: #fff;
     max-width: 1000px;
     margin: auto;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 .cardText {
