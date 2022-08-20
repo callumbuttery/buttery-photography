@@ -7,7 +7,7 @@
         <div class="portfolioSecondaryContainer" v-for="(wedding, i) in weddings" :key="i">
             <v-card-title class="cardText" color="#bcb8b1">{{ wedding.name }}</v-card-title>
             <v-card-subtitle class="text-center" color="#bcb8b1">{{ wedding.venue }}</v-card-subtitle>
-            <v-carousel class="carousel">
+            <v-carousel class="carousel" >
                 <v-carousel-item v-for="(picture, j) in wedding.pictures" :key="j" :src="picture.src"
                     reverse-transition="slide-x-transition" transition="slide-x-transition"></v-carousel-item>
             </v-carousel>
