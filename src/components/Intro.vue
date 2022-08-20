@@ -61,7 +61,7 @@ export default {
   text-align: center;
   color: white;
 }
-
+  
 .introRating {
   margin-top: 30px;
 }
