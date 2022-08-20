@@ -85,7 +85,7 @@ export default {
 
 .contactPrimaryContainer {
     background-color: #fff;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 150px;
 }
 

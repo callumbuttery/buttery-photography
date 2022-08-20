@@ -1,9 +1,8 @@
 <template>
-  <v-app-bar height="130px" color="#1D1C1A" dark>
+  <v-app-bar height="60px" color="#1D1C1A" dark>
     <v-container fill-height fluid>
       <v-row align="center" justify="center" class="navRow">
-        <v-img src="../assets/logo.png" height="70px" contain></v-img>
-
+        <span class="copyright">©Buttery Photography</span>
       </v-row>
     </v-container>
   </v-app-bar>
@@ -12,32 +11,6 @@
 <script>
 export default {
   name: "Footer",
-  data() {
-    return {
-      items: [
-        {
-          text: "Home",
-          href: "/",
-        },
-        {
-          text: "About",
-          href: "/about",
-        },
-        {
-          text: "Portfolio",
-          href: "/pricing",
-        },
-        {
-          text: "Pricing",
-          href: "/pricing",
-        },
-        {
-          text: "Contact",
-          href: "/contact",
-        },
-      ],
-    };
-  },
 };
 </script>
 
@@ -60,5 +33,10 @@ export default {
 
 .listContainer {
   margin-right: 200px;
+}
+
+.copyright {
+  font-family: "Playfair Display";
+  opacity: 0.7;
 }
 </style>
