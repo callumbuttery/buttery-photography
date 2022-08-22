@@ -33,17 +33,17 @@ export default {
         {
           text: "Portfolio",
           scroll: "#portfolioSection",
-          offset: -50,
+          offset: 10,
         },
         {
           text: "Pricing",
           scroll: "#pricingSection",
-          offset: -50,
+          offset: 10,
         },
         {
           text: "Contact",
           scroll: "#contactSection",
-          offset: -75,
+          offset: -40,
         },
       ],
     };
