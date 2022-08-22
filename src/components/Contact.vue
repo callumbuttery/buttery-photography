@@ -1,5 +1,5 @@
 <template>
-    <div class="contactPrimaryContainer">
+    <div class="contactPrimaryContainer" id="contactSection">
         <v-container>
             <v-row align="center" justify="center">
                 <v-col align="center" justify="center" class="contactTitle">CONTACT</v-col>

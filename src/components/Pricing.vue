@@ -1,5 +1,5 @@
 <template>
-    <div class="pricingPrimaryContainer">
+    <div class="pricingPrimaryContainer" id="pricingSection">
         <v-container fill-height fluid class="pricingSecondaryContainer">
             <v-row align="center" justify="center">
                 <v-col align="center" justify="center" class="packagesTitle">WEDDING PACKAGES</v-col>

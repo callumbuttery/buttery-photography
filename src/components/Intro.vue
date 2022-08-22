@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid wrap class="introContainer">
+  <v-container fluid wrap class="introContainer" id="aboutSection">
     <v-row align="center" justify="center">
       <v-col align="center" justify="center" class="introTitle">ABOUT</v-col>
     </v-row>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="welcomeSection">
     <v-img class="welcomeImage" width="100%" max-height="800" src="../assets/portfolio/IMG_5729.png">
       <v-container fill-height fluid>
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>

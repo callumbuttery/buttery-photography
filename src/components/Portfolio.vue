@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolioPrimaryContainer">
+  <div class="portfolioPrimaryContainer" id="portfolioSection">
     <v-row align="center" justify="center">
       <v-col align="center" justify="center" class="portfolioTitle"
         >PORTFOLIO</v-col
