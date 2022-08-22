@@ -10,24 +10,26 @@
     >
     <v-container class="portfolioSecondaryContainer" fill-height fluid>
       <v-row>
-        <v-col v-for="(wedding, i) in weddings" :key="i" class="columns">
-          <v-card-title class="text-center cardText" color="#bcb8b1">{{
-            wedding.name
-          }}</v-card-title>
-          <v-card-subtitle class="text-center cardSubText" color="#bcb8b1">{{
-            wedding.venue
-          }}</v-card-subtitle>
-          <v-carousel class="carousel" hide-delimiters>
-            <v-carousel-item
-              v-for="(picture, j) in wedding.pictures"
-              :key="j"
-              :src="picture.src"
-              reverse-transition="slide-x-transition"
-              transition="slide-x-transition"
-              contain
-            ></v-carousel-item>
-          </v-carousel>
-        </v-col>
+        <v-card v-for="(wedding, i) in weddings" :key="i" class="columns" elevation="5">
+          <v-col>
+            <h2 class="text-center cardText" color="#bcb8b1">{{
+              wedding.name
+            }}</h2>
+            <p class="text-center cardSubText" color="#bcb8b1">{{
+              wedding.venue
+            }}</p>
+            <v-carousel class="carousel" hide-delimiters>
+              <v-carousel-item
+                v-for="(picture, j) in wedding.pictures"
+                :key="j"
+                :src="picture.src"
+                reverse-transition="slide-x-transition"
+                transition="slide-x-transition"
+                contain
+              ></v-carousel-item>
+            </v-carousel>
+          </v-col>
+        </v-card>
       </v-row>
     </v-container>
   </div>
@@ -40,7 +42,7 @@ export default {
     return {
       weddings: [
         {
-          name: "The Miller's",
+          name: "Mr & Mrs Miller",
           venue: "Ross Priory",
           pictures: [
             {
@@ -109,7 +111,7 @@ export default {
           ],
         },
         {
-          name: "The McGhee's",
+          name: "Mr & Mrs McGhee",
           venue: "The Corinthian Club",
           pictures: [
             {
@@ -232,26 +234,26 @@ export default {
 }
 
 .cardText {
-  max-width: 200px;
-  margin: auto;
   color: #1d1c1a;
   font-family: "Playfair Display", serif;
   font-size: 20px;
 }
 
 .cardSubText {
-  margin: auto;
-  max-width: 300px;
+    font-family: "Playfair Display", serif;
 }
 
 .carousel {
   border-radius: 25px;
-  width: 700px;
+  width: 600px;
   margin: auto;
 }
 
 .columns {
-  width: 700px;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .portfolioTitle {
