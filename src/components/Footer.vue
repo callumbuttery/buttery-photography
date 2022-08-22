@@ -2,7 +2,7 @@
   <v-app-bar height="60px" color="#1D1C1A" dark>
     <v-container fill-height fluid>
       <v-row align="center" justify="center" class="navRow">
-        <span class="copyright">©Buttery Photography</span>
+        <span class="copyright">©Buttery Photography - 2022</span>
       </v-row>
     </v-container>
   </v-app-bar>
