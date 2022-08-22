@@ -173,6 +173,8 @@ export default {
 
 .carousel {
   border-radius: 25px;
+  width: 700px;
+  margin: auto;
 }
 
 .portfolioTitle {
