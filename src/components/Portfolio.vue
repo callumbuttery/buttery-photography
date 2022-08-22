@@ -8,28 +8,28 @@
     <v-col align="center" justify="center" class="portfolioTopLine"
       >───────────────</v-col
     >
-    <div
-      class="portfolioSecondaryContainer"
-      v-for="(wedding, i) in weddings"
-      :key="i"
-    >
-      <v-card-title class="cardText" color="#bcb8b1">{{
-        wedding.name
-      }}</v-card-title>
-      <v-card-subtitle class="text-center" color="#bcb8b1">{{
-        wedding.venue
-      }}</v-card-subtitle>
-      <v-carousel class="carousel" hide-delimiters>
-        <v-carousel-item
-          v-for="(picture, j) in wedding.pictures"
-          :key="j"
-          :src="picture.src"
-          reverse-transition="slide-x-transition"
-          transition="slide-x-transition"
-          contain
-        ></v-carousel-item>
-      </v-carousel>
-    </div>
+    <v-container class="portfolioSecondaryContainer" fill-height fluid>
+      <v-row>
+        <v-col v-for="(wedding, i) in weddings" :key="i" class="columns">
+          <v-card-title class="cardText" color="#bcb8b1">{{
+            wedding.name
+          }}</v-card-title>
+          <v-card-subtitle class="text-center" color="#bcb8b1">{{
+            wedding.venue
+          }}</v-card-subtitle>
+          <v-carousel class="carousel" hide-delimiters>
+            <v-carousel-item
+              v-for="(picture, j) in wedding.pictures"
+              :key="j"
+              :src="picture.src"
+              reverse-transition="slide-x-transition"
+              transition="slide-x-transition"
+              contain
+            ></v-carousel-item>
+          </v-carousel>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -158,9 +158,8 @@ export default {
 
 .portfolioSecondaryContainer {
   background: #fff;
-  max-width: 1000px;
-  margin: auto;
   padding-bottom: 20px;
+  margin: auto;
 }
 
 .cardText {
@@ -175,6 +174,10 @@ export default {
   border-radius: 25px;
   width: 700px;
   margin: auto;
+}
+
+.columns {
+  width: 700px;
 }
 
 .portfolioTitle {
