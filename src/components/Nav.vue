@@ -8,7 +8,7 @@
               item.text
           }}</v-btn>
         </div>
-        <v-icon color="red darken-2">mdi-instagram </v-icon>
+        <v-icon color="red darken-2" @click="popOpenInstagram">mdi-instagram </v-icon>
       </v-row>
     </v-container>
   </v-app-bar>
@@ -47,6 +47,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    popOpenInstagram() {
+      window.open("https://www.instagram.com/buttery.photography/", "_blank", "noopener");
+    },
   },
 };
 </script>
