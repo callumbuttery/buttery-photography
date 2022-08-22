@@ -11,10 +11,10 @@
     <v-container class="portfolioSecondaryContainer" fill-height fluid>
       <v-row>
         <v-col v-for="(wedding, i) in weddings" :key="i" class="columns">
-          <v-card-title class="cardText" color="#bcb8b1">{{
+          <v-card-title class="text-center cardText" color="#bcb8b1">{{
             wedding.name
           }}</v-card-title>
-          <v-card-subtitle class="text-center" color="#bcb8b1">{{
+          <v-card-subtitle class="text-center cardSubText" color="#bcb8b1">{{
             wedding.venue
           }}</v-card-subtitle>
           <v-carousel class="carousel" hide-delimiters>
@@ -40,7 +40,7 @@ export default {
     return {
       weddings: [
         {
-          name: "Mr & Mrs Miller",
+          name: "The Miller's",
           venue: "Ross Priory",
           pictures: [
             {
@@ -109,20 +109,71 @@ export default {
           ],
         },
         {
-          name: "Mr & Mrs bob",
-          venue: "The House",
+          name: "The McGhee's",
+          venue: "The Corinthian Club",
           pictures: [
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+              src: require("../assets/portfolio/McGhee/1.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+              src: require("../assets/portfolio/McGhee/2.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+              src: require("../assets/portfolio/McGhee/3.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+              src: require("../assets/portfolio/McGhee/4.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/5.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/6.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/7.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/8.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/9.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/10.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/11.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/12.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/13.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/14.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/15.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/16.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/17.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/18.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/19.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/20.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/McGhee/21.jpg"),
             },
           ],
         },
@@ -185,7 +236,12 @@ export default {
   margin: auto;
   color: #1d1c1a;
   font-family: "Playfair Display", serif;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.cardSubText {
+  margin: auto;
+  max-width: 300px;
 }
 
 .carousel {
