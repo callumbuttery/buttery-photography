@@ -12,8 +12,7 @@
             >{{ item.text }}</v-btn
           >
         </div>
-        <v-spacer></v-spacer>
-        <v-icon color="red darken-2" @click="popOpenInstagram"
+        <v-icon class="ml-10" color="grey lighten-1" size="25" @click="popOpenInstagram"
           >mdi-instagram
         </v-icon>
         <v-spacer></v-spacer>
