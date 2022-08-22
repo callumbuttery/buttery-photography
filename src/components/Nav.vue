@@ -86,4 +86,8 @@ export default {
   margin-right: 200px;
 }
 
+.v-btn__content {
+  font-size: 20px;
+}
+
 </style>
