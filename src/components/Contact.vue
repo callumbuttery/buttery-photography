@@ -76,6 +76,9 @@ export default {
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
+    phoneRules: [
+      (v) => !!v || "Phone number is required",
+    ],
     select: null,
     items: ["Basic Package", "Standard Package", "Premium Package", "Other"],
     checkbox: false,
