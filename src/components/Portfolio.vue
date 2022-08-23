@@ -5,19 +5,27 @@
         >PORTFOLIO</v-col
       >
     </v-row>
-    <v-col align="center" justify="center" class="portfolioTopLine"
+    <v-col align="center" justify="center" class="caption">
+      Other images available on request
+    </v-col>
+    <v-col align="center" class="portfolioTopLine"
       >───────────────</v-col
     >
     <v-container class="portfolioSecondaryContainer" fill-height fluid>
       <v-row>
-        <v-card v-for="(wedding, i) in weddings" :key="i" class="columns" elevation="5">
+        <v-card
+          v-for="(wedding, i) in weddings"
+          :key="i"
+          class="columns"
+          elevation="10"
+        >
           <v-col>
-            <h2 class="text-center cardText" color="#bcb8b1">{{
-              wedding.name
-            }}</h2>
-            <p class="text-center cardSubText" color="#bcb8b1">{{
-              wedding.venue
-            }}</p>
+            <h2 class="text-center cardText" color="#bcb8b1">
+              {{ wedding.name }}
+            </h2>
+            <p class="text-center cardSubText" color="#bcb8b1">
+              {{ wedding.venue }}
+            </p>
             <v-carousel class="carousel" hide-delimiters>
               <v-carousel-item
                 v-for="(picture, j) in wedding.pictures"
@@ -32,6 +40,9 @@
         </v-card>
       </v-row>
     </v-container>
+    <v-col align="center" justify="center" class="portfolioBottomLine"
+      >───────────────</v-col
+    >
   </div>
 </template>
 
@@ -180,38 +191,86 @@ export default {
           ],
         },
         {
-          name: "Mr & Mrs Smith",
-          venue: "The moon",
+          name: "Mr & Mrs Munro",
+          venue: "Bothwell Parish Church",
           pictures: [
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+              src: require("../assets/portfolio/Munros/1.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+              src: require("../assets/portfolio/Munros/2.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+              src: require("../assets/portfolio/Munros/3.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+              src: require("../assets/portfolio/Munros/4.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/5.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/6.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/7.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/8.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/9.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/10.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/11.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/12.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/13.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/14.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Munros/15.jpg"),
             },
           ],
         },
         {
           name: "Mr & Mrs Smith",
-          venue: "The moon",
+          venue: "The Dalmahoy",
           pictures: [
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+              src: require("../assets/portfolio/Smiths/1.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+              src: require("../assets/portfolio/Smiths/2.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+              src: require("../assets/portfolio/Smiths/3.jpg"),
             },
             {
-              src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+              src: require("../assets/portfolio/Smiths/4.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Smiths/5.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Smiths/6.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Smiths/7.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Smiths/8.jpg"),
+            },
+            {
+              src: require("../assets/portfolio/Smiths/9.jpg"),
             },
           ],
         },
@@ -224,7 +283,7 @@ export default {
 <style>
 .portfolioPrimaryContainer {
   background-color: #fff;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .portfolioSecondaryContainer {
@@ -240,7 +299,7 @@ export default {
 }
 
 .cardSubText {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 }
 
 .carousel {
@@ -269,5 +328,11 @@ export default {
   font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #1d1c1a;
+}
+.portfolioBottomLine {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  color: #1d1c1a;
+  padding-bottom: 100px;
 }
 </style>
