@@ -116,7 +116,7 @@ export default {
 
 <style>
 .gdprContainer {
-  width: 60%;
+  width: 45%;
   height: 100%;
   margin: auto;
   text-align: left;
