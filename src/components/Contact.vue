@@ -41,12 +41,14 @@
             required
           ></v-select>
 
-          <v-checkbox
-            v-model="checkbox"
-            :rules="[(v) => !!v || 'You must agree to continue!']"
-            label="Do you agree?"
-            required
-          ></v-checkbox>
+          <v-row>
+            <v-checkbox
+              v-model="checkbox"
+              :rules="[(v) => !!v || 'You must agree to continue!']"
+              required
+            ></v-checkbox>
+            <div color="black" class="mt-5">Do you agree with our <router-link to="/privacy">privacy policy?</router-link></div>
+          </v-row>
         </v-form>
         <v-btn
           :disabled="!valid"
@@ -62,6 +64,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Contact",
   data: () => ({
@@ -76,9 +79,7 @@ export default {
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
-    phoneRules: [
-      (v) => !!v || "Phone number is required",
-    ],
+    phoneRules: [(v) => !!v || "Phone number is required"],
     select: null,
     items: ["Basic Package", "Standard Package", "Premium Package", "Other"],
     checkbox: false,
@@ -94,6 +95,9 @@ export default {
     resetValidation() {
       this.$refs.form.resetValidation();
     },
+    openPrivacy() {
+      this.$router.go(Gdpr)
+    }
   },
 };
 </script>
@@ -135,6 +139,6 @@ export default {
 }
 
 .submitButton {
-    left: 45%;
+  left: 45%;
 }
 </style>
