@@ -34,7 +34,7 @@
           ></v-text-field>
 
           <v-select
-            v-model="select"
+            v-model="item"
             :items="items"
             :rules="[(v) => !!v || 'Item is required']"
             label="Item"
@@ -65,6 +65,8 @@
 
 <script>
 
+import axios from 'axios';
+
 export default {
   name: "Contact",
   data: () => ({
@@ -79,8 +81,10 @@ export default {
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
+    phone: "",
     phoneRules: [(v) => !!v || "Phone number is required"],
     select: null,
+    item: "",
     items: ["Basic Package", "Standard Package", "Premium Package", "Other"],
     checkbox: false,
   }),
@@ -88,6 +92,9 @@ export default {
   methods: {
     validate() {
       this.$refs.form.validate();
+
+
+      this.sendEmail();
     },
     reset() {
       this.$refs.form.reset();
@@ -97,6 +104,14 @@ export default {
     },
     openPrivacy() {
       this.$router.go(Gdpr)
+    },
+    async sendEmail() {
+      const response = await fetch(
+          `/netlify/functions/service`,
+          { name: this.name, email: this.email, phone: this.phone, item: this.item}
+        ).then(response => response);
+
+      console.log('response: ', response);
     }
   },
 };
