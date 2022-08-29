@@ -1,4 +1,4 @@
 [build]
 functions = 'netlify/functions'
-publish = 'build'
-targetPort = '8080'
+command = "npm run build"
+publish = "dist"
