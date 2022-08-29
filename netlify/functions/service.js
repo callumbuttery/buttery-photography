@@ -1,6 +1,7 @@
-const { nodemailer } = require('nodemailer');
+var performance = require('performance');
+import { nodemailer } from 'nodemailer';
 
-export const handler = async () => {
+export async function handler(event){
   console.log('hitting server');
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -34,4 +35,4 @@ export const handler = async () => {
       };
     }
   });
-};
+}
