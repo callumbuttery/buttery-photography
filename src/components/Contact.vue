@@ -47,7 +47,10 @@
               :rules="[(v) => !!v || 'You must agree to continue!']"
               required
             ></v-checkbox>
-            <div color="black" class="mt-5">Do you agree with our <router-link to="/privacy">privacy policy?</router-link></div>
+            <div color="black" class="mt-5">
+              Do you agree with our
+              <router-link to="/privacy">privacy policy?</router-link>
+            </div>
           </v-row>
         </v-form>
         <v-btn
@@ -64,8 +67,7 @@
 </template>
 
 <script>
-
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   name: "Contact",
@@ -93,7 +95,6 @@ export default {
     validate() {
       this.$refs.form.validate();
 
-
       this.sendEmail();
     },
     reset() {
@@ -103,15 +104,20 @@ export default {
       this.$refs.form.resetValidation();
     },
     openPrivacy() {
-      this.$router.go(Gdpr)
+      this.$router.go(Gdpr);
     },
     async sendEmail() {
       console.log(process.env.VUE_APP_EMAIL_EMAIL);
-      await fetch(
-          `/.netlify/functions/service`,
-          { name: this.name, email: this.email, phone: this.phone, item: this.item}
-        )    
-      }
+      await axios(`/.netlify/functions/service`, {
+        method: 'POST',
+        data: {
+          name: this.name,
+          email: this.email,
+          phone: this.phone,
+          item: this.item,
+        },
+      });
+    },
   },
 };
 </script>
