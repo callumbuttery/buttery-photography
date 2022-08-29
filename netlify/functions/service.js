@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+const { nodemailer } = require('nodemailer');
 
 export const handler = async () => {
   console.log('hitting server');
