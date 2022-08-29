@@ -125,12 +125,6 @@ export default {
 
       this.sendEmail();
     },
-    reset() {
-      this.$refs.form.reset();
-    },
-    resetValidation() {
-      this.$refs.form.resetValidation();
-    },
     openPrivacy() {
       this.$router.go(Gdpr);
     },
