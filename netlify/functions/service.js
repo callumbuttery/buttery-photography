@@ -1,6 +1,7 @@
 var nodemailer = require("nodemailer");
 
 export const handler = async () => {
+  console.log('hitting server');
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
