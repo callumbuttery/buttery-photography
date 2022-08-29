@@ -106,13 +106,12 @@ export default {
       this.$router.go(Gdpr)
     },
     async sendEmail() {
-      const response = await fetch(
+      console.log(process.env.VUE_APP_EMAIL_EMAIL);
+      await fetch(
           `/netlify/functions/service`,
           { name: this.name, email: this.email, phone: this.phone, item: this.item}
-        ).then(response => response);
-
-      console.log('response: ', response);
-    }
+        )    
+      }
   },
 };
 </script>
