@@ -108,7 +108,7 @@ export default {
     async sendEmail() {
       console.log(process.env.VUE_APP_EMAIL_EMAIL);
       await fetch(
-          `/netlify/functions/service`,
+          `/.netlify/functions/service`,
           { name: this.name, email: this.email, phone: this.phone, item: this.item}
         )    
       }
