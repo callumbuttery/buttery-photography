@@ -33,6 +33,11 @@
             required
           ></v-text-field>
 
+          <v-text-field
+            v-model="phone"
+            label="Phone"
+          ></v-text-field>
+
           <v-select
             v-model="item"
             :items="items"
@@ -40,6 +45,24 @@
             label="Item"
             required
           ></v-select>
+
+          <v-text-field
+            v-model="subject"
+            :rules="subjectRules"
+            label="Reason for contact..."
+            required
+            height="100px"
+          ></v-text-field>
+
+          <v-text-field
+            v-model="venue"
+            label="Venue if known..."
+          ></v-text-field>
+
+          <v-text-field
+            v-model="date"
+            label="Date of event if known..."
+          ></v-text-field>
 
           <v-row>
             <v-checkbox
@@ -83,12 +106,17 @@ export default {
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
+    subjectRules: [
+      (v) => !!v || "Subject is required",
+    ],
     phone: "",
-    phoneRules: [(v) => !!v || "Phone number is required"],
     select: null,
     item: "",
     items: ["Basic Package", "Standard Package", "Premium Package", "Other"],
     checkbox: false,
+    subject: "",
+    date: "",
+    venue: "",
   }),
 
   methods: {
@@ -115,6 +143,9 @@ export default {
           email: this.email,
           phone: this.phone,
           item: this.item,
+          venue: this.venue,
+          date: this.date,
+          subject: this.subject,
         },
       });
     },
