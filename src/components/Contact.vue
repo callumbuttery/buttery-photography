@@ -76,6 +76,7 @@
             </div>
           </v-row>
         </v-form>
+        <Alert class="alert" v-if="notify" :type="notificationType"></Alert>
         <v-btn
           :disabled="!valid"
           color="success"
@@ -91,9 +92,13 @@
 
 <script>
 import axios from "axios";
+import Alert from "./Alert"
 
 export default {
   name: "Contact",
+  components: {
+    Alert,
+  },
   data: () => ({
     valid: true,
     name: "",
@@ -117,6 +122,8 @@ export default {
     subject: "",
     date: "",
     venue: "",
+    notificationType: "",
+    notify: false,
   }),
 
   methods: {
@@ -128,8 +135,15 @@ export default {
     openPrivacy() {
       this.$router.go(Gdpr);
     },
+    displayAlert(status) {
+      status === 200 ? this.notificationType = 'success' : this.notificationType = 'warning'
+      this.notify = true;
+      setTimeout(() => {
+        this.notify = false;
+      }, 5000)
+    },
     async sendEmail() {
-      await axios(`/.netlify/functions/service`, {
+      const data = await axios(`/.netlify/functions/service`, {
         method: 'POST',
         data: {
           name: this.name,
@@ -141,6 +155,8 @@ export default {
           subject: this.subject,
         },
       });
+
+      this.displayAlert(data.status);
     },
   },
 };

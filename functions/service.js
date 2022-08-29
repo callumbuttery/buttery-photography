@@ -9,12 +9,12 @@ exports.handler = async function (event) {
     const html = `
       <div> 
          Email recieved from ${name} @${email} @${phone}! <br><br>
-         ${venue},
+         Event Venue: ${venue},
          <br>
-         ${date},
+         Event Date: ${date},
          <br>
          <br>
-          ${subject}
+         Email Subject: ${subject}
       </div>
     `;
     const mail = {
