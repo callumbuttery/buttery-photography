@@ -129,7 +129,6 @@ export default {
       this.$router.go(Gdpr);
     },
     async sendEmail() {
-      console.log(process.env.VUE_APP_EMAIL_EMAIL);
       await axios(`/.netlify/functions/service`, {
         method: 'POST',
         data: {
