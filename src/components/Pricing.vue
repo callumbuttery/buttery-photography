@@ -7,11 +7,11 @@
             <v-col align="center" justify="center" class="pricingTopLine">───────────────</v-col>
             <v-row>
                 <v-col v-for="(option, i) in packages" :key="i">
-                    <v-card class="pa-2 rounded-xl" outlined tile>
-                        <v-card-title class="pricingTitle">{{ option.name }}</v-card-title>
-                        <v-card-subtitle>{{ option.price }}</v-card-subtitle>
-                        <v-card-text>{{ option.description }}</v-card-text>
-                        <v-card-text v-for="(detail, j) in option.details" :key="j">{{ detail }}</v-card-text>
+                    <v-card class="pa-2 rounded-xl" outlined tile height="700px" :color="option.color">
+                        <v-card-title class="pricingTitle text-h5">{{ option.name }}</v-card-title>
+                        <v-card-subtitle class="mb-5">{{ option.price }}</v-card-subtitle>
+                        <v-card-text class="text-body-1">{{ option.description }}</v-card-text>
+                        <v-card-text v-for="(detail, j) in option.details" :key="j" class="text-body-2">{{ detail }}</v-card-text>
                     </v-card>
                 </v-col>
             </v-row>
@@ -30,19 +30,22 @@ export default {
                     name: "Basic",
                     price: "£249.99",
                     description: "This package is perfect for smaller occasions, covering from the start of the ceremony through to arrival at reception.",
-                    details: ['~1 hour of photography', '~1 hour of video', '1 hour of editing', '~1 hour of retouching', '~1 hour of lighting', '~1 hour of sound', '~1 hour of music', '~1 hour of props']
+                    details: ['~Full ceremony coverage', '~Guests arriving at reception', '~Couples shots', '~Group shots', '~50-100 pictures (depending on size)', '~Editing time included'],
+                    color: 'white',
                 },
                 {
                     name: "Standard",
                     price: "£399.99",
-                    description: "This package is perfect for smaller occasions, covering from the start of the ceremony through to arrival at reception.",
-                    details: ['~2 hour of photography', '~2 hour of video', '2 hour of editing', '~2 hour of retouching', '~2 hour of lighting', '~2 hour of sound', '~1 hour of music', '~2 hour of props']
+                    description: "Our BEST value package. Designed for an average wedding size, covering Full Ceremony to first dances",
+                    details: ['~Full ceremony coverage', '~Guests arriving at reception', '~Start of reception through first dances', '~Couples shots', '~Group shots', '~75-200 pictures (depending on size)', '~Editing time included'],
+                    color: '#ffd666',
                 },
                 {
                     name: "Premium",
                     price: "£649.99",
-                    description: "This package is perfect for smaller occasions, covering from the start of the ceremony through to arrival at reception.",
-                    details: ['~3 hour of photography', '~3 hour of video', '3 hour of editing', '~3 hour of retouching', '~3 hour of lighting', '~3 hour of sound', '~3 hour of music', '~3 hour of props']
+                    description: "This package is perfect for larger occasions, Bridal prep through to end of reception. Additional couples shoot on seperate day",
+                    details: ['~Bridal prep', '~Full ceremony', '~Full reception', '~First dances', '~Couples shots', '~Group shots', '~100-350 pictures (depending on size) ', '~Editing time included', '~Couples shoot on seperate day at special location'],
+                    color: 'white',
                 },
             ],
         }
@@ -64,7 +67,6 @@ export default {
 }
 
 .pricingTitle {
-    color: #f8b600;
     font-family: "Playfair Display", serif;
 }
 
