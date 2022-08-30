@@ -76,7 +76,7 @@
             </div>
           </v-row>
         </v-form>
-        <Alert class="alert" v-if="notify" :type="notificationType"></Alert>
+        <Alert class="alert" v-if="notify" :type="notificationType" :message="message"></Alert>
         <v-btn
           :disabled="!valid"
           color="success"
@@ -124,6 +124,7 @@ export default {
     venue: "",
     notificationType: "",
     notify: false,
+    message: "",
   }),
 
   methods: {
@@ -135,12 +136,24 @@ export default {
     openPrivacy() {
       this.$router.go(Gdpr);
     },
+    resetForm() {
+      this.$refs.form.reset();
+    },
     displayAlert(status) {
-      status === 200 ? this.notificationType = 'success' : this.notificationType = 'warning'
+
+      if (status === 200) {
+        this.notificationType = "success";
+        this.message = "Successfully sent email, we will be in contact within 48 hours!";
+      } else {
+        this.notificationType = "warning";
+        this.message = "Failed to send email, please try again shortly"
+      }
+
       this.notify = true;
+      this.resetForm();
       setTimeout(() => {
         this.notify = false;
-      }, 5000)
+      }, 8000)
     },
     async sendEmail() {
       const data = await axios(`/.netlify/functions/service`, {
