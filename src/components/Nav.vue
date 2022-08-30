@@ -89,4 +89,10 @@ export default {
   font-size: 20px;
 }
 
+@media screen and (max-width: 500px){
+  .v-btn__content {
+    font-size: 12px;
+}
+}
+
 </style>
