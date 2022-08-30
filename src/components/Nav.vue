@@ -39,7 +39,7 @@ export default {
         {
           text: "Portfolio",
           scroll: "#portfolioSection",
-          offset: 10,
+          offset: -30,
         },
         {
           text: "Pricing",
