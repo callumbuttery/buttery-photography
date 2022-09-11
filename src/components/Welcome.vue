@@ -4,7 +4,7 @@
       <v-container fill-height fluid>
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
         <v-row align="center" justify="center">
-          <v-col align="center" justify="center" class="mainText">BUTTERY PHOTOGRAPHY</v-col>
+          <v-col align="center" justify="center" class="mainText">BUTTERY PHOTO</v-col>
         </v-row>
         <v-col align="center" justify="center" class="bottomLine">───────────────</v-col>
       </v-container>

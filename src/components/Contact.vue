@@ -46,13 +46,13 @@
             required
           ></v-select>
 
-          <v-text-field
+          <v-textarea
             v-model="subject"
             :rules="subjectRules"
             label="Reason for contact..."
             required
             height="100px"
-          ></v-text-field>
+          ></v-textarea>
 
           <v-text-field
             v-model="venue"
