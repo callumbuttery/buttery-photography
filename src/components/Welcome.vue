@@ -4,7 +4,7 @@
       <v-container fill-height fluid>
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
         <v-row align="center" justify="center">
-          <v-col align="center" justify="center" class="mainText">BUTTERY PHOTO</v-col>
+          <v-col align="center" justify="center" class="mainText">BUTTERY VISUALS</v-col>
         </v-row>
         <v-col align="center" justify="center" class="bottomLine">───────────────</v-col>
       </v-container>
@@ -22,8 +22,9 @@ export default {
 
 <style>
 .mainText {
-  font-size: 50px;
+  font-size: 60px;
   font-family: "Playfair Display", serif;
   color: #1D1C1A;
+  
 }
 </style>
