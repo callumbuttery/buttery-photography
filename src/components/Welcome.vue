@@ -4,6 +4,9 @@
       <v-container fill-height fluid>
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
         <v-row align="center" justify="center">
+          <v-img :src="logo" contain height="300px" width="400px"></v-img>
+        </v-row>
+        <v-row>
           <v-col align="center" justify="center" class="mainText">BUTTERY PHOTOGRAPHY</v-col>
         </v-row>
         <v-col align="center" justify="center" class="bottomLine">───────────────</v-col>
@@ -16,7 +19,9 @@
 export default {
   name: "Welcome",
 
-  data: () => ({}),
+  data: () => ({
+    logo: require("../assets/logo3.png"),
+  }),
 };
 </script>
 
@@ -24,7 +29,7 @@ export default {
 .mainText {
   font-size: 60px;
   font-family: "Playfair Display", serif;
-  color: #1D1C1A;
+  color: #fff;
   
 }
 </style>
