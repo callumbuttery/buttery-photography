@@ -117,7 +117,7 @@ export default {
     phone: "",
     select: null,
     item: "",
-    items: ["Basic Package", "Standard Package", "Premium Package", "Other"],
+    items: ["Silver Package", "Gold Package", "Diamond Package", "Other"],
     checkbox: false,
     subject: "",
     date: "",
