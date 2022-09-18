@@ -12,7 +12,7 @@
                             <v-card-title class="pricingTitle text-h5">{{ option.name }}</v-card-title>
                             <v-card-subtitle class="mb-5 font-weight-black">{{ option.price }}</v-card-subtitle>
                             <v-card-text class="mb-5 text-body-1 font-weight-medium">{{ option.description }}</v-card-text>
-                            <v-card-text v-for="(detail, j) in option.details" :key="j" class="text-body-1 font-weight-medium">{{ detail }}</v-card-text>
+                            <v-card-text v-for="(detail, j) in option.details" :key="j" class="text-body-1 font-weight-light">{{ detail }}</v-card-text>
                         </v-card>
                     </v-card>
                 </v-col>
@@ -29,21 +29,21 @@ export default {
         return {
             packages: [
                 {
-                    name: "Basic",
+                    name: "Celebration",
                     price: "£249.99",
                     description: "This package is perfect for smaller occasions, covering from the start of the ceremony through to arrival at reception.",
                     details: ['~Full ceremony coverage', '~Guests arriving at reception', '~Couples shoot', '~Group shots', '~50-100 pictures (depending on size)', '~Editing time included'],
                     color: 'grey',
                 },
                 {
-                    name: "STANDARD - BEST VALUE",
+                    name: "Festival - BEST VALUE",
                     price: "£399.99",
                     description: "Our BEST value package. Designed for an average wedding size, covering Full Ceremony to first dances",
                     details: ['~Full ceremony coverage', '~Guests arriving at reception', '~Start of reception through first dances', '~Couples shoot', '~Group shots', '~75-200 pictures (depending on size)', '~Editing time included'],
                     color: '#ffd666',
                 },
                 {
-                    name: "Premium",
+                    name: "Gala",
                     price: "£649.99",
                     description: "This package is perfect for larger occasions, Bridal prep through to end of reception. Additional couples shoot on seperate day",
                     details: ['~Bridal prep', '~Full ceremony', '~Full reception', '~First dances', '~Couples shoot', '~Group shots', '~100-350 pictures (depending on size) ', '~Editing time included', '~Couples shoot on seperate day at special location'],
