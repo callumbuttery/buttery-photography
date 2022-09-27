@@ -3,9 +3,6 @@
     <v-img class="welcomeImage" width="100%" max-height="1000" src="../assets/portfolio/IMG_5729.png">
       <v-container fill-height fluid>
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
-        <v-row align="center" justify="center">
-          <v-img :src="logo" contain height="300px" width="400px"></v-img>
-        </v-row>
         <v-row>
           <v-col align="center" justify="center" class="mainText">BUTTERY PHOTOGRAPHY</v-col>
         </v-row>
