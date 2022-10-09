@@ -4,7 +4,7 @@
       <v-container fill-height fluid data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
         <v-row>
-          <v-img class="welcomeImage mx-auto" width="100%" max-height="600" max-width="600" src="../assets/logo-black.png" />
+          <v-img elevation="10" contain class="welcomeImage mx-auto" width="100%" max-height="600" max-width="600" src="../assets/logo-black.png" />
         </v-row>
         <v-col align="center" justify="center" class="bottomLine">───────────────</v-col>
       </v-container>
@@ -28,5 +28,9 @@ export default {
   font-family: "Playfair Display", serif;
   color: #fff;
   
+}
+
+.welcomeImage {
+  filter: drop-shadow(8px 6px 8px #222);
 }
 </style>
