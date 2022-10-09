@@ -1,7 +1,7 @@
 <template>
   <div id="welcomeSection">
     <v-img class="welcomeImage" width="100%" max-height="1000" src="../assets/portfolio/IMG_5729.png">
-      <v-container fill-height fluid>
+      <v-container fill-height fluid data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
         <v-row>
           <v-col align="center" justify="center" class="mainText">BUTTERY PHOTOGRAPHY</v-col>
