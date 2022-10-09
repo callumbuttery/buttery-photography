@@ -1,5 +1,5 @@
 <template>
-  <div class="contactPrimaryContainer" id="contactSection">
+  <div class="contactPrimaryContainer" id="contactSection" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
     <v-container>
       <v-row align="center" justify="center">
         <v-col align="center" justify="center" class="contactTitle"
