@@ -4,7 +4,7 @@
       <v-container fill-height fluid data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
         <v-col align="center" justify="center" class="topLine">───────────────</v-col>
         <v-row>
-          <v-col align="center" justify="center" class="mainText">BUTTERY PHOTOGRAPHY</v-col>
+          <v-img class="welcomeImage mx-auto" width="100%" max-height="600" max-width="600" src="../assets/logo-black.png" />
         </v-row>
         <v-col align="center" justify="center" class="bottomLine">───────────────</v-col>
       </v-container>
@@ -17,7 +17,7 @@ export default {
   name: "Welcome",
 
   data: () => ({
-    logo: require("../assets/logo3.png"),
+    logo: require("../assets/logo.png"),
   }),
 };
 </script>

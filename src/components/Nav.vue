@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app height="130px" color="#1D1C1A" dark>
-    <v-img src="../assets/logo3.png" class="" width="10px" height="100px" contain></v-img>
+  <v-spacer></v-spacer>
       <v-row align="center" justify="center" class="navRow">
         <div v-for="item in items" class="list">
           <v-btn
