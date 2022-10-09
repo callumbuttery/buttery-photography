@@ -1,28 +1,45 @@
 <template>
   <v-container fluid wrap class="introContainer" id="aboutSection">
-    <v-row align="center" justify="center">
-      <v-col align="center" justify="center" class="introTitle">ABOUT</v-col>
-    </v-row>
-    <v-col align="center" justify="center" class="topLine">───────────────</v-col>
-    <v-row>
-      <v-col align="center" justify="center" class="introMainHeader">Natural, documentary Wedding Photography</v-col>
-    </v-row>
-    <v-col align="center">
-      <div class="introMainText">Hello! I'm Callum Buttery, Wedding Photographer,
-        Software Engineer and lover of all things sport & wildlife. My wedding style is very relaxed with a focus on
-        catching candid smiles from beautiful moments. Shooting this way allows for everyone to enjoy their day without
-        the stress of having a
-        camera in their face. Lets be real, posing doesn't truly represent your big day!
-      </div>
-    </v-col>
+    <div data-aos="fade-in" data-aos-duration="3000" data-aos-delay="1000">
+      <v-row align="center" justify="center">
+        <v-col align="center" justify="center" class="introTitle">ABOUT</v-col>
+      </v-row>
+      <v-col align="center" justify="center" class="topLine"
+        >───────────────</v-col
+      >
+      <v-row>
+        <v-col align="center" justify="center" class="introMainHeader"
+          >Natural, documentary Wedding Photography</v-col
+        >
+      </v-row>
+      <v-col align="center">
+        <div class="introMainText">
+          Hello! I'm Callum Buttery, Wedding Photographer, Software Engineer and
+          lover of all things sport & wildlife. My wedding style is very relaxed
+          with a focus on catching candid smiles from beautiful moments.
+          Shooting this way allows for everyone to enjoy their day without the
+          stress of having a camera in their face. Lets be real, posing doesn't
+          truly represent your big day!
+        </div>
+      </v-col>
 
-    <v-rating length="5" size="40" :value="5" color="#f5cb5c" align="center" justify="center" class="introRating"
-      readonly>
-    </v-rating>
-    <div class="introMainText text-caption">9 reviews</div>
+      <v-rating
+        length="5"
+        size="40"
+        :value="5"
+        color="#f5cb5c"
+        align="center"
+        justify="center"
+        class="introRating"
+        readonly
+      >
+      </v-rating>
+      <div class="introMainText text-caption">9 reviews</div>
 
-
-    <v-col align="center" justify="center" class="bottomLine">───────────────</v-col>
+      <v-col align="center" justify="center" class="bottomLine"
+        >───────────────</v-col
+      >
+    </div>
   </v-container>
 </template>
 
@@ -61,13 +78,13 @@ export default {
   text-align: center;
   color: white;
 }
-  
+
 .introRating {
   margin-top: 30px;
 }
 
 .introContainer {
-  background: #1D1C1A !important;
+  background: #1d1c1a !important;
 }
 
 .introTitle {
@@ -78,6 +95,5 @@ export default {
   font-family: "Playfair Display", serif;
   max-width: 180px;
   padding-top: 100px;
-
 }
 </style>
