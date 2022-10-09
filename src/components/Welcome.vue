@@ -31,6 +31,6 @@ export default {
 }
 
 .welcomeImage {
-  filter: drop-shadow(8px 6px 8px #222);
+  filter: drop-shadow(5px 5px 10px #222);
 }
 </style>
