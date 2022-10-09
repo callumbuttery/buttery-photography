@@ -18,6 +18,9 @@
           :key="i"
           class="columns"
           elevation="10"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="200"
         >
           <v-col>
             <h2 class="text-center cardText" color="#bcb8b1">
