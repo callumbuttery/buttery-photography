@@ -330,6 +330,7 @@ export default {
 .portfolioTopLine {
   font-size: 20px;
   font-family: "Playfair Display", serif;
+  margin-bottom: 50px;
   color: #1d1c1a;
 }
 .portfolioBottomLine {
