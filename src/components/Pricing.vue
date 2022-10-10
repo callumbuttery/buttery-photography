@@ -82,13 +82,13 @@ export default {
 }
 
 .pricingTopLine {
-  font-size: 60px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
   margin-top: 0px;
 }
 .pricingBottomLine {
-  font-size: 60px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
   margin-bottom: 50px;

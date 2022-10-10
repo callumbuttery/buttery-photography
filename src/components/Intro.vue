@@ -4,7 +4,7 @@
       <v-row align="center" justify="center">
         <v-col align="center" justify="center" class="introTitle">ABOUT</v-col>
       </v-row>
-      <v-col align="center" justify="center" class="topLine"
+      <v-col align="center" justify="center" class="introTopLine"
         >───────────────</v-col
       >
       <v-row>
@@ -36,7 +36,7 @@
       </v-rating>
       <div class="introMainText text-caption">9 reviews</div>
 
-      <v-col align="center" justify="center" class="bottomLine"
+      <v-col align="center" justify="center" class="introBottomLine"
         >───────────────</v-col
       >
     </div>
@@ -52,15 +52,15 @@ export default {
 </script>
 
 <style>
-.topLine {
-  font-size: 60px;
+.introTopLine {
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
   margin-top: 0px;
 }
 
-.bottomLine {
-  font-size: 60px;
+.introBottomLine {
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #f5cb5c;
   margin-bottom: 150px;

@@ -191,7 +191,7 @@ export default {
 }
 
 .contactLine {
-  font-size: 60px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #1d1c1a;
 }

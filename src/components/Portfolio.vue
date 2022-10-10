@@ -328,12 +328,12 @@ export default {
 }
 
 .portfolioTopLine {
-  font-size: 60px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #1d1c1a;
 }
 .portfolioBottomLine {
-  font-size: 60px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   color: #1d1c1a;
   padding-bottom: 100px;
