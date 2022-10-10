@@ -1,6 +1,7 @@
 <template>
   <v-app-bar app height="130px" color="#1D1C1A" dark>
   <v-spacer></v-spacer>
+    <v-toolbar>
       <v-row align="center" justify="center" class="navRow">
         <div v-for="item in items" class="list">
           <v-btn
@@ -17,6 +18,7 @@
         </v-icon>
         <v-spacer></v-spacer>
       </v-row>
+    </v-toolbar>
   </v-app-bar>
 </template>
 
