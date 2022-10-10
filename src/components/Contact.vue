@@ -22,6 +22,7 @@
             :counter="50"
             :rules="nameRules"
             label="Name"
+            class="formItem"
             required
           >
           </v-text-field>
@@ -30,12 +31,14 @@
             v-model="email"
             :rules="emailRules"
             label="E-mail"
+            class="formItem"
             required
           ></v-text-field>
 
           <v-text-field
             v-model="phone"
             label="Phone"
+            class="formItem"
           ></v-text-field>
 
           <v-select
@@ -43,6 +46,7 @@
             :items="items"
             :rules="[(v) => !!v || 'Item is required']"
             label="Item"
+            class="formItem"
             required
           ></v-select>
 
@@ -50,6 +54,7 @@
             v-model="subject"
             :rules="subjectRules"
             label="Reason for contact..."
+            class="formItem"
             required
             height="100px"
           ></v-textarea>
@@ -57,17 +62,20 @@
           <v-text-field
             v-model="venue"
             label="Venue if known..."
+            class="formItem"
           ></v-text-field>
 
           <v-text-field
             v-model="date"
             label="Date of event if known..."
+            class="formItem"
           ></v-text-field>
 
           <v-row>
             <v-checkbox
               v-model="checkbox"
               :rules="[(v) => !!v || 'You must agree to continue!']"
+              class="formItem"
               required
             ></v-checkbox>
             <div color="black" class="mt-5">
@@ -213,5 +221,10 @@ export default {
 
 .submitButton {
   left: 45%;
+}
+
+.formItem {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 </style>
