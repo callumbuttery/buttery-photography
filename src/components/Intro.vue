@@ -73,7 +73,7 @@ export default {
 }
 
 .introMainText {
-  width: 700px;
+  max-width: 700px;
   margin: auto;
   text-align: center;
   color: white;
