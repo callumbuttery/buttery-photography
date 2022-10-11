@@ -1,6 +1,10 @@
 <template>
   <v-row>
     <v-cotainer align="center" justify="center" class="gdprContainer mt-10">
+      <v-row justify="center" class="mb-10 mt-10">
+        <router-link to="/">Go back</router-link>
+      </v-row>
+
       <h1>GDPR & Privacy Policy</h1>
       <div>
         Buttery photography operates as a freelance entity. This policy will
@@ -101,9 +105,6 @@
         callumbuttery@icloud.com
       </div>
 
-      <v-row justify="center" class="mt-10">
-        <router-link to="/">Go back</router-link>
-      </v-row>
     </v-cotainer>
   </v-row>
 </template>
