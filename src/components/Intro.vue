@@ -1,6 +1,6 @@
 <template>
   <v-container fluid wrap class="introContainer" id="aboutSection">
-    <div data-aos="fade-in" data-aos-duration="3000" data-aos-delay="1000">
+    <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000">
       <v-row align="center" justify="center">
         <v-col align="center" justify="center" class="introTitle">ABOUT</v-col>
       </v-row>
