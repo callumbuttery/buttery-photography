@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app height="130px" color="#1D1C1A" dark>
+  <v-app-bar app height="95px" color="#1D1C1A" dark>
   <v-spacer></v-spacer>
       <v-row align="center" justify="center" class="navRow">
         <div v-for="item in items" class="list">
