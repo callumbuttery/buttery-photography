@@ -10,7 +10,7 @@
                     <v-card class="pa-6 rounded-xl" height="760px" :color="option.color">
                         <v-card class="full-height rounded-xl" elevation="20" height="720px">
                             <v-card-title class="pricingTitle text-h5">{{ option.name }}</v-card-title>
-                            <v-card-subtitle class="mb-5 font-weight-black">{{ option.price }}</v-card-subtitle>
+                            <v-card-subtitle class="mb-5 font-weight-black text-h5">{{ option.price }}</v-card-subtitle>
                             <v-card-text class="mb-10 text-body-1 font-weight-medium">{{ option.description }}</v-card-text>
                             <v-card-text v-for="(detail, j) in option.details" :key="j" class="text-body-1">{{ detail }}</v-card-text>
                         </v-card>
