@@ -9,7 +9,7 @@
       <v-col align="center" justify="center" class="pricingTopLine"
         >───────────────</v-col
       >
-      <v-row>
+      <v-row class="contain-row">
         <v-col
           v-for="(option, i) in packages"
           :key="i"
@@ -53,7 +53,7 @@ export default {
       packages: [
         {
           name: "Silver",
-          price: "£249.99",
+          price: "£499.99",
           description:
             "This package is perfect for smaller occasions, covering from the start of the ceremony through to arrival at reception.",
           details: [
@@ -68,7 +68,7 @@ export default {
         },
         {
           name: "Gold - Best Value",
-          price: "£399.99",
+          price: "£699.99",
           description:
             "Our BEST value package. Designed for an average wedding size, covering Full Ceremony to first dances",
           details: [
@@ -79,12 +79,14 @@ export default {
             "• Group shots",
             "• 75-200 pictures (depending on size)",
             "• Editing time included",
+            "• £25 print voucher",
+            "• 5 A4 prints of choice",
           ],
           color: "#f5cb5c;",
         },
         {
           name: "Platinum",
-          price: "£649.99",
+          price: "£949.99",
           description:
             "This package is perfect for larger occasions, Bridal prep through to end of reception. Additional couples shoot on seperate day",
           details: [
@@ -96,6 +98,8 @@ export default {
             "• 100-350 pictures (depending on size) ",
             "• Editing time included",
             "• Couples shoot on seperate day at special location",
+            "• £25 print voucher",
+            "• 10 A4 prints of choice",
           ],
           color: "#E5E4E2",
         },
@@ -145,5 +149,10 @@ export default {
 .v-card__text {
   padding: 8px;
   color: white;
+}
+
+.contain-row {
+  width: 50%;
+  margin: 0 auto;
 }
 </style>
