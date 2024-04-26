@@ -18,7 +18,7 @@
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <div height="720px">
+          <div height="720px" class="cardContainer">
             <v-card-title class="pricingTitle text-h5">{{
               option.name
             }}</v-card-title>
@@ -32,7 +32,7 @@
             </div>
 
             <v-card-subtitle
-              class="mb-5 pt-16 font-weight white--text text-h5"
+              class="mb-5 pt-16 font-weight text-h5 "
               >{{ option.price }}</v-card-subtitle
             >
           </div>
@@ -116,13 +116,20 @@ export default {
 }
 
 .pricingSecondaryContainer {
-  width: 1800px;
+  width: 1600px;
   padding-top: 150px;
+}
+
+.cardContainer {
+  background: white;
+  border-radius: 10px;
+  border: 1px;
+  height: 650px;
 }
 
 .pricingTitle {
   font-family: "Playfair Display", serif;
-  color: white;
+  color: black;
 }
 
 .packagesTitle {
@@ -148,7 +155,7 @@ export default {
 
 .v-card__text {
   padding: 8px;
-  color: white;
+  color: black;
 }
 
 .contain-row {
